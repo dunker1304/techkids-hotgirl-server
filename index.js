@@ -57,7 +57,7 @@ app.get('/', (req,res) => {
   res.sendFile('./build/index.html');
 });
 
-mongoose.connect(config.mongoPath, err => {
+mongoose.connect('mongodb://admin:tieuhoi1304@ds215089.mlab.com:15089/techkids_hotgirl', err => {
   if (err) console.error(err);
   else console.log("Database connect successful");
 });
