@@ -1,5 +1,5 @@
 {
-  "mongoPath": "mongodb://localhost:27017/tk-hotgirls",
+  "mongoPath": "mongodb://admin:tieuhoi1304@ds215089.mlab.com:15089/techkids_hotgirl",
   "sessionSecret": "himitsu",
   "secureCookie": false
 }

@@ -54,10 +54,11 @@ app.use("/api/users", userRouter);
 app.use(express.static('./build'));
 
 app.get('/', (req,res) => {
-  res.sendFile('./build/index.html');
+  //res.sendFile('./build/index.html');
+  res.send("Techkids Hotgirl");
 });
 
-mongoose.connect('mongodb://admin:tieuhoi1304@ds215089.mlab.com:15089/techkids_hotgirl', err => {
+mongoose.connect(config.mongoPath, err => {
   if (err) console.error(err);
   else console.log("Database connect successful");
 });
